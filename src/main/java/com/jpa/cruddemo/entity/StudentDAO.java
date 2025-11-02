@@ -8,5 +8,7 @@ public interface StudentDAO {
     Student findById(Integer id);
 
     List<Student> findAll();
+    
+    Student findByNamStudent(String nombre);
 }
 

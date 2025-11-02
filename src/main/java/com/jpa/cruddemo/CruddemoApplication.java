@@ -18,7 +18,7 @@ public class CruddemoApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner(StudentDAO studentDAO){
 		return runner -> {
-			/*System.out.println("ingresando estudiantes...");
+			System.out.println("ingresando estudiantes...");
 
 			Student theStudent1 = new Student("Smith","Realidad Virtual");
 			studentDAO.save(theStudent1);
@@ -27,7 +27,7 @@ public class CruddemoApplication {
 			Student theStudent3 = new Student("Tootee","Sports");
 			studentDAO.save(theStudent3);
 			System.out.println("Estudiante agregado:" + theStudent1.getId());
-*/
+
 			for(Student theStudent: studentDAO.findAll()){
 				System.out.println("El estudiante es:" + theStudent);
 			}
